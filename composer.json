@@ -1,0 +1,13 @@
+{
+    "name": "Kanin.PHP",
+    "description": "The Kanin.PHP Framework",
+    "keywords": [
+        "framework",
+        "kaninphp"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "another-vendor/package": "1.*"
+    }
+}
