@@ -8,6 +8,6 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "another-vendor/package": "1.*"
+        "phpunit/phpunit": "3.*"
     }
 }
