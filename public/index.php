@@ -15,5 +15,11 @@
  * @since         Kanin.PHP v0.0.1
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+define('KANIN_COOK', time());
 
+
+require __DIR__.'/../framework/autoload.php';
+
+
+$app = require_once __DIR__.'/../framework/app.php';
 

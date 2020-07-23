@@ -16,13 +16,4 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$uri = urldecode(
-    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
-);
-
-
- if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
-     return false;
-}
-
-require 'public' . DIRECTORY_SEPARATOR . 'index.php';
+$app = new Rice();

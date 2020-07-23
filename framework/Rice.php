@@ -2,7 +2,7 @@
 /**
  * PHP versions 7.0+
  *
- * Kanin.PHP(tm) : Application Framework
+ * Kanin.PHP : Application Framework
  * Copyright 2020, Indevfinite Software Foundation, Inc. (https:/indevfinite.com)
  *
  * Licensed under The MIT License
@@ -16,13 +16,12 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$uri = urldecode(
-    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
-);
+ class Rice {
 
+    function __construct($basePath = null){
+       
+      $url = $_SERVER['REQUEST_URI'];
 
- if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
-     return false;
-}
-
-require 'public' . DIRECTORY_SEPARATOR . 'index.php';
+    }
+    
+ }
